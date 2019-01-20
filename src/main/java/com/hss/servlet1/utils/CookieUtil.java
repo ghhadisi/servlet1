@@ -1,6 +1,8 @@
 package com.hss.servlet1.utils;
 
 
+import javax.servlet.http.Cookie;
+
 public class CookieUtil {
 
 	/**
@@ -9,14 +11,14 @@ public class CookieUtil {
 	 * @param name
 	 * @return
 	 */
-//	public static Cookie findCookie(Cookie[] cookies , String name){
-//		if(cookies != null){
-//			for (Cookie cookie : cookies) {
-//				if(name.equals(cookie.getName())){
-//					return cookie;
-//				}
-//			}
-//		}
-//		return null;
-//	}
+	public static Cookie findCookie(Cookie[] cookies , String name){
+		if(cookies != null){
+			for (Cookie cookie : cookies) {
+				if(name.equals(cookie.getName())){
+					return cookie;
+				}
+			}
+		}
+		return null;
+	}
 }
