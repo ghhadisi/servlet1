@@ -25,11 +25,11 @@ public class LoginServlet extends HttpServlet {
 			 * response.setStatus(302);
 			response.setHeader("Location", "login_success.html");*/
 
-            //重定向写法： 重新定位方向  /根目录
+            //重定向写法： 重新定位方向  /根目录  2次请求不限制
             response.sendRedirect("login_success.html");
 
 
-            //请求转发的写法：
+            //请求转发的写法： 1次请求  项目内转发
 //			request.getRequestDispatcher("login_success.html").forward(request, response);
         }else {
             response.getWriter().write("登录失败");
