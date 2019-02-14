@@ -9,6 +9,7 @@
     <input type="submit" value="提交" />
 </form>
 
-
+<a href="/userServlet?method=login">login</a>
+<a href="/userServlet?method=add">add</a>
 
 </html>

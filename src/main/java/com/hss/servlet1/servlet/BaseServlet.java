@@ -19,6 +19,7 @@ public class BaseServlet extends HttpServlet {
         if (null == md || "".equals(md) || md.trim().equals("")) {
             md = "execute";
         }
+        System.err.println(md);
         //定义变量,存放功能执行完毕之后要转发的路径
         String path=null;
         //获取到当前字节码对象(ServletDemo02.class在内存中对象)
@@ -32,6 +33,7 @@ public class BaseServlet extends HttpServlet {
                 path=(String)method.invoke(this, req,resp);
 
                 if(null!=path){
+                    System.err.println(path);
                     //服务端的转发
                     req.getRequestDispatcher(path).forward(req, resp);
                 }

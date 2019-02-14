@@ -44,11 +44,11 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/src/main/webapp/lib" />
+          <root url="file://$MODULE_DIR$/libs" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/src/main/webapp/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
       </library>
     </orderEntry>
   </component>
